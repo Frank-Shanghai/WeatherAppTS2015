@@ -1,0 +1,17 @@
+﻿1. 在index.html页面中，页面最后引入javascript文件的部分。有一行：
+<script type="text/javascript" src="cordova.js"></script>
+但并没有这个文件，从file explorer中可以找到这个文件位于platform的folder中，所以这个文件是在debug或打包时，从platform foler里面加入到app中的，Android, iOS and Windows debug或打包时都会有这个文件。
+
+
+2. <script type="text/javascript" src="scripts/appBundle.js"></script>, 这个是上一级Scripts文件中所有ts文件的输出(output, 所有ts文件transpile to这一个文件).
+	Frank Sun at 3/24/2018 5:54 PM
+	这是VS2015版本的Visual Studio Tools for Apach Cordova的ts mobile app 模板。
+	VS2017稍有不同，更合理一些。
+	从https://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/ 中左上部分有下拉列表可选择2017或2015版本，默认是2017了。
+	
+3. OpenWeatherMap所需的weather service的相关信息。
+	joels
+	joels@live.com(不验证邮箱，所以随便输）
+	Abc_****
+	Key: "e5a5b82f4ad41f1978ed64d3e580efbd" 
+	需要外网的情况下service才能用。
