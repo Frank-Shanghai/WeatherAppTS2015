@@ -16,6 +16,7 @@ module WeatherAppTS2015 {
             document.addEventListener('resume', onResume, false);
 
             // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
+            $('#get-weather-btn').click(Weather.instance.getWeatherWithZipCode);
         }
 
         function onPause() {
